@@ -1,0 +1,648 @@
+/*https://coolors.co/1c2321-7d98aD1-5e6572-a9b4c2-eef1ef*/
+
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cultured: #E9EAED;
+
+}
+
+* {
+    transition: all 0.2s;
+}
+
+
+#wizard {
+    width: 101%;
+    height: 101%;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+
+.panel {
+    z-index: 11;
+    width: 40em;
+    height: 30em;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #535C65;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#header {
+    position: relative;
+    width: 100;
+}
+
+.deleteIcon,
+.editIcon,
+.viewIcon {
+    display: none;
+    right: 30px;
+    width: 20px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+
+}
+
+.viewIcon {
+    right: 60px;
+}
+
+.deleteIcon:focus,
+.editIcon:focus,
+.viewIcon:focus {
+    border-color: rgba(0, 0, 0, 0) !important;
+    box-shadow: 0 0 0 0;
+
+}
+
+.object:hover .deleteIcon,
+.object:hover .editIcon,
+.object:hover .viewIcon {
+    display: flex;
+}
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+​ .hours {
+    border-right: #263238 solid 1px;
+
+}
+
+.title {
+    font-weight: 600;
+    justify-self: flex-start;
+    font-size: 100%;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 80%;
+}
+
+.start {
+    font-weight: 500;
+    font-size: 70%;
+}
+
+.end {
+    font-weight: 500;
+    font-size: 70%;
+}
+
+.owner {
+    font-weight: 400;
+    justify-self: flex-end;
+    font-size: 60%;
+}
+
+.export {
+    font-weight: 400;
+    justify-self: flex-end;
+    font-size: 60%;
+}
+
+#preview {
+    position: relative;
+    background: #49505A;
+    overflow: hidden;
+}
+
+
+.dash {
+    width: 100%;
+    border-top: 2px dashed #263238;
+}
+
+.hover {
+    background-color: #49515A !important;
+}
+
+.cell {
+    cursor: pointer;
+    padding: 0 !important;
+}
+
+.cell>a {
+    padding: .5rem .5rem;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.cell>a,
+.menu,
+#members,
+.view {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+#bg>div>h4 {
+    color: #E9EAED;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#content>nav>div>ul>li>a {
+    position: relative;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Radio Canada', sans-serif;
+    background-color: #535C65;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+
+
+.inline {
+    display: inline;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+#controls {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+#controls>form {
+    margin: 0 1em;
+}
+
+.cell>div>p {
+    margin-bottom: 0em;
+}
+
+
+nav {
+    background-color: #49505A;
+}
+
+
+
+#content>nav>div>ul>li>a {
+    color: var(--cultured);
+}
+
+
+#calendar>h2 {
+    color: var(--cultured);
+}
+
+
+
+#calendar>table>tbody>tr>td.cell.today {
+    background-color: #40474F;
+}
+
+#calendar>table>tbody>tr>td.cell:hover {
+    background-color: #49515A;
+}
+
+#sw-form {
+    display: contents;
+}
+
+.sw {
+    border-radius: 2em;
+    border: 2px solid;
+}
+
+#content>nav>div>ul>li:nth-child(1)>button {
+    border-color: #373C43;
+    background-color: #40464F;
+}
+
+#content>nav>div>ul>li:nth-child(1)>button>img {
+    content: url('https://img.icons8.com/color/32/000000/full-moon.png');
+}
+
+#calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+#calendar>table {
+    border: 1px solid #373C43;
+    color: var(--cultured);
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 802px) and (max-device-width: 1020px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    .empty {
+        display: none;
+    }
+
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    td {
+        border: none;
+        position: relative;
+
+    }
+
+}
+
+
+/*Smartphone*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+/*iPads*/
+
+@media only screen and (min-device-width: 802px) and (max-device-width: 1020px) {
+    body {
+        width: 495px;
+    }
+}
+
+@media (min-width: 641px) {
+    table {
+        table-layout: fixed;
+    }
+
+    td {
+        width: 33%;
+    }
+}
+
+#viewport {
+    padding-left: 250px;
+}
+
+nav>.container-fluid {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    flex-direction: row !important;
+}
+
+#content {
+    width: 100%;
+    position: relative;
+    margin-right: 0;
+}
+
+
+/* Sidebar Styles */
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    z-index: 8;
+    position: fixed;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #334247;
+    color: #B7C1CD;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#logo {
+    margin-bottom: 0;
+}
+
+#bg {
+    height: 9em;
+}
+
+#sidebar .sb-h {
+    display: flex;
+    flex-direction: column;
+    background-color: #2B373B;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bg-wrap {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-wrap .user-logo .img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+}
+
+.sb-h a,
+.sb-h h4 {
+    color: #E9EAED !important;
+    text-decoration: none !important;
+}
+
+#sidebar .nav {
+    font-weight: 600;
+    display: block;
+    height: 100%;
+
+}
+
+#sidebar .nav li {
+    width: 100%;
+}
+
+
+
+#account {
+    position: absolute;
+    bottom: 0;
+}
+
+
+#select-agenda>.options {
+    z-index: 10;
+}
+
+#select-agenda,
+#accountBtn {
+    border-top: #111618 1px solid;
+}
+
+#agendaBtn,
+#groupBtn {
+    border-bottom: #111618 1px solid;
+}
+
+
+
+
+
+.select-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 0.7em;
+    font-size: 1.2em;
+
+}
+
+.select-btn i {
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+
+.menu.active>.select-btn> :nth-last-child(1) {
+    transform: rotate(-180deg);
+}
+
+
+.menu .options {
+    position: relative;
+    padding: 0.2em;
+    display: none;
+
+}
+
+#select-group .options .option .option-text{
+ width: 68%;
+}
+#select-group .options .option div{
+width: 32%;
+}
+#select-agenda.active .options,
+#select-group.active .options {
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    border-radius: 0px 0px 8px 8px;
+    position: relative;
+    max-height: 15em;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+
+#account.active .options {
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    border-radius: 8px 8px 0px 0px;
+
+}
+
+#account>.options>.option,
+#account>.options>.option>i {
+    padding-left: 0.5em;
+    padding-right: 2.5em;
+}
+
+.menu.active .options {
+    display: block;
+    border-bottom: #111618 1px solid;
+    background-color: #2B373B;
+    padding: 0;
+    opacity: 0;
+    padding-bottom: 0.3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    width: 100%;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+}
+
+#account.active .options {
+    border-bottom: 0px;
+    border-top: #111618 1px solid;
+}
+
+
+
+
+.options .option {
+    display: flex;
+    min-height: 3em;
+    align-items: center;
+
+}
+
+
+
+.options .option:hover, #viewGroupMembers li:hover {
+    background: rgba(70, 93, 104, 0.5);
+}
+
+.option {
+    position: relative;
+    margin-top: 0.3em;
+    padding: 0.3em;
+    border-radius: 8px;
+}
+
+
+
+.option-btn {
+    color: #B7C1CD;
+    
+}
+
+#addAgenda i,
+#addGroup i {
+  
+    font-size: 2em;
+}
+
+.option i {
+    font-size: 1em;
+}
+
+.option .option-text {
+    font-size: 1em;
+}
+
+
+#viewGroupMembers,
+#editGroupform > div.form-group.h-75.w-100.d-flex.flex-row > div.form-group.w-50.px-2 > div > fieldset  {
+    background-color: #495057;
+    padding: 0.3em;
+    border-radius: 8px;
+    height: 100%;
+    overflow-y: auto;
+    word-break: break-all;
+}
+#addAgendaGroupField
+{
+    display: none;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 30px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translate3d(0, -30px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

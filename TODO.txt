@@ -1,0 +1,161 @@
+//Recheck l'authentification ✔️
+
+
+//menu pour créer un groupe ✔️
+//mettre username  dans le viewHome ✔️
+
+
+En general:
+-Quand on clique sur une journée il faut rediriger l'utilisateur dans la page avec le href et anchor✔️
+-Et afficher les bons event et cacher les autres ✔️
+-Faire les vue (jour/semaine/mois)❌
+
+pour les events: 
+-on les affiche dans la vue quand le jour est selectionner (à faire)✔️  ❌
+
+=======================
+
+
+Gestion agendas:
+
+-ouvrir✔️
+-ajouter✔️
+-supprimer✔️
+
+-
+Quand on créer un agenda:✔️
+-Proposer le nom✔️
+-Proposer si groupe ou pas✔️
+-Si groupe il y a, menu déroulant avec le nom des groupes et on selectionne un groupe (groupe sera forcement créer avant)✔️
+
+Quand on supprimer un agenda: ✔️
+On met le bouton de suppression si on est le owner de l'agenda✔️
+-bouton de suppression (into bouton de confirmation (Êtes vous sur de vouloir ...) FACULTATIF)✔️
+Si c'est celui qu'on voit sur la page on reload la page✔️
+
+Quand on vient de changer d'agenda: ✔️
+Changer le titre de la page ✔️
+On update le last_agenda ✔️
+reload la page ✔️
+
+=======================
+
+
+
+
+Gestion EVENT
+-recuperation ✔️
+
+AVEC account id et agenda id
+
+
+[Que si on est OWNER]✔️
+-modification ✔️
+-suppression ✔️
+-ajout ✔️
+
+
+Quand on affiche un event:❌
+On split en 2 (50 / 50 les 2 events) (TROP COMPLEXE FACULTATIF)❌
+
+Quand on récup un event❌
+On a la var de l'agenda (last_agenda)✔️
+On recup la plage:✔️
+si elle existe pas:✔️
+JOUR = par défaut aujourd'hui❌
+SEMAINE = semaine actuelle❌
+MOIS = mois actuel❌
+
+On fait la requête✔️
+
+
+Quand on modifie un event:
+On prend les vars de bases ✔️
+
+-Proposer la modification du titre (< 50 car et > 0)✔️
+-Proposer la modification de la desc (< 255 car > 0)✔️
+-Proposer la modification du début (< a la fin)✔️
+-Proposer la modification de la fin (> au debut)✔️
+
+
+
+On modifie l'export (la date de modification) quand l'user confirme la modif✔️
+On compare les vars✔️
+on update dans la bdd seulement celles qui ont changées✔️
+[JS]
+On update les events✔️
+
+
+Quand on supprime un event:
+confirmation Êtes vous sur en pop up ✔️
+On supprime dans la table event✔️
+
+[JS]
+On update les events✔️
+
+Quand on ajoute un event:
+
+-Proposer le choix du titre (< 50 car et > 0) ✔️
+-Proposer le choix de la desc (< 255 car > 0) ✔️
+-Proposer le choix du début (< a la fin) ✔️
+-Proposer le choix de la fin (> au debut) ✔️D
+
+On met l'export (la date de modification) quand l'user confirme la création✔️
+
+on save dans la bdd✔️
+On save dans la table events✔️
+On save dans la table Agenda_event✔️
+
+[JS]
+On update les events
+
+
+============
+
+Gestion GROUPE
+
+Affichage comme calendrier✔️
+[que si on est owner]✔️
+-modification  ✔️
+-suppression ✔️
+-ajout ✔️
+
+Quand on modifie un groupe:✔️
+-On propose de changer le nom✔️
+-on propose si on veut ajouter ou supprimer des membres✔️
+[en radio button]✔️
+-On affiche tous les membres avec icone pour supprimer into confirmation (on update la base group_accounts)✔️
+-On met un bouton ajouter (ça affiche tous les accounts et ça grise ceux qui sont dans le groupe)✔️
+
+
+Quand on supprime un groupe:✔️
+On met le bouton de suppression si on est le owner de l'agenda✔️
+-bouton de suppression (into bouton de confirmation (Êtes vous sur de vouloir ...) FACULTATIF)✔️
+
+Quand on ajoute un groupe:✔️
+-Proposer le nom✔️
+-Si groupe il y a, menu déroulant avec le nom des groupes et quand on selectionne un groupe (groupe sera forcement créer avant✔️
+
+
+============
+General: ❌
+
+Quand on arrive sur le /home:
+
+On check si l'user est connecté
+si non => /login
+
+si oui =>
+On recup le last_agenda et on le met en cookie / session idc ✔️
+Script js qui fait des requete ajax✔️
+[JS]
+recup les events avec le last_agenda✔️
+on les builds✔️
+
+[JS]
+Quand on update les event:
+On remove toutes les classes avec event✔️
+On fait la requete ✔️
+On affiche tout✔️
+
+ 

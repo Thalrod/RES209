@@ -1,0 +1,8 @@
+body {
+    font-family: 'Radio Canada', sans-serif;
+    background-color: #89A1A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

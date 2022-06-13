@@ -1,0 +1,54 @@
+/*https://coolors.co/1c2321-7d98a1-5e6572-a9b4c2-eef1ef*/
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+
+* {
+
+    transition: all 0.2s;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Radio Canada', sans-serif;
+    background-color: #89A1A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 30em;
+    padding: 1em;
+    transform: translateY(-5em);
+    background-color: rgba(172, 189, 195, 0.8);
+    border-radius: 2em;
+    
+}
+
+.container > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container > form > input,
+.container > form > label
+{
+    margin-top: .33em;
+}
+
+body > div > form > input[type=submit]:nth-child(5) {
+    margin-top: 1em;
+}

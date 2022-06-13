@@ -1,0 +1,19 @@
+//Recheck l'authentification
+
+
+//menu pour créer un groupe
+//mettre username  dans le viewHome
+
+
+pour les events:
+-on recup les events dans la bdd (côté compte et côté groupes)
+-on les stocks dans les cookies
+-on les affiche dans la vue quand le jour est selectionner (à faire)
+
+truc à faore:
+
+
+BUG:
+dzqdzqddzq
+dzqdzqddzqdzq
+dzqdzqddzq
