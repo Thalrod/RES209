@@ -13,10 +13,10 @@ abstract class Model
     private static function setBdd()
     {
         try {
-            $user = "rt1a21";
-            $pass = "IHrm6v";
-            $dbname = "rt1a21";
-            $host = "srv-prj-new.iut-acy.local";
+            $user = "";
+            $pass = "";
+            $dbname = "";
+            $host = "";
             $port = "5432";
 
             $dsn = 'pgsql:host=' . $host . ';dbname=' . $dbname . ';port=' . $port;
